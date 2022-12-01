@@ -1,0 +1,26 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe645 0%, #e2aa02 100%);
+  background-image: url("https://miro.medium.com/max/769/0*zDVc9i-yKN0adcsr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+
+  .login-card {
+    width: 500px;
+    right: 90px;
+    bottom: 90px;
+    position: absolute;
+    // min-width: 150px;
+    // margin: 7% auto;
+  }
+  .fullwidth {
+    width: 100%;
+  }
+  .maticon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}

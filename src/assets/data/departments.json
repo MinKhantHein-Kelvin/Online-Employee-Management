@@ -1,0 +1,27 @@
+[
+  {
+    "deptid": 101,
+    "deptname": "Admin",
+    "ordno" : 1
+  },
+  {
+    "deptid": 102,
+    "deptname": "HR",
+    "ordno" : 1
+  },
+  {
+    "deptid": 103,
+    "deptname": "Finance",
+    "ordno" : 1
+  },
+  {
+    "deptid": 104,
+    "deptname": "IT",
+    "ordno" : 1
+  },
+  {
+    "deptid": 105,
+    "deptname": "Sales",
+    "ordno" : 1
+  }
+]

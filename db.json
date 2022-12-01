@@ -1,0 +1,49 @@
+{
+  "employees": [
+    {
+      "id" : 1,
+      "empName" : "Min Khant Hein",
+      "email" : "minkhant1999@gmail.com",
+      "mobile" : "09785503330",
+      "department" : "IT"
+    },
+    {
+      "id" : 2,
+      "empName" : "Htya",
+      "email" : "htya@gmail.com",
+      "mobile" : "09962203330",
+      "department" : "Finance"
+    },
+    {
+      "id" : 3,
+      "empName" : "Ako",
+      "email" : "ako@gmail.com",
+      "mobile" : "09685503330",
+      "department" : "HR"
+    },
+    {
+      "id" : 4,
+      "empName" : "Tha",
+      "email" : "tha@gmail.com",
+      "mobile" : "09254403330",
+      "department" : "Admin"
+    },
+    {
+      "id" : 5,
+      "empName" : "Ylt",
+      "email" : "ylt@gmail.com",
+      "mobile" : "09451233330",
+      "department" : "Sales"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,13 @@
+.shadow{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,50%);
+}
+.table{
+  th{
+    border-top: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
+  td{
+    text-align: center;
+  }
+}

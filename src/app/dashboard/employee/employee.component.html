@@ -1,0 +1,50 @@
+<div class="container-fluid mt-3">
+  <div class="row d-flex justify-content-end">
+    <form class="form-inline">
+      <mat-form-field class="mr-3">
+        <mat-label class="text-danger">Search Employee.......</mat-label>
+        <input matInput placeholder="Search Employee ID or Name">
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Departments</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.empName}}</td>
+                <td>{{emp.email}}</td>
+                <td>{{emp.mobile}}</td>
+                <td>{{emp.department}}</td>
+                <td>
+                  <button mat-button color="accent">
+                    <mat-icon>view_list</mat-icon>
+                  </button>
+                  <button mat-button color="primary">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button mat-button color="warn">
+                    <mat-icon>delete_forever</mat-icon>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

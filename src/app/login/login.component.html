@@ -1,0 +1,40 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title><h1 class="font-weight-bold">Login Form</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form action="" [formGroup]="adminLoginData">
+        <table cellspacing = "0" class="fullwidth">
+          <tr>
+            <td>
+            <mat-form-field class="fullwidth">
+              <input type="text" matInput placeholder="Email" formControlName ="email" name="email" required>
+              <mat-icon matSuffix class="maticon">mail</mat-icon>
+            </mat-form-field>
+            <mat-error *ngIf="Email?.invalid && Email?.errors?.['email']">
+              <span class="small text-danger font-weight-bold">*Invalid Email</span>
+            </mat-error>
+          </td>
+        </tr>
+          <tr>
+            <td>
+            <mat-form-field class="fullwidth">
+              <input [type]="hide ? 'password' : 'text'" matInput placeholder="Password" formControlName ="password" name="password" required>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" style=" margin-right: 10px;">
+                <mat-icon style="font-size: 20px;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+            <mat-error *ngIf="Password?.invalid && Password?.errors?.['minlength']">
+              <span class="small text-danger font-weight-bold">*Password must at least 6 characters!</span>
+            </mat-error>
+          </td>
+        </tr>
+        </table>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" class="float-right mr-2" (click)="adminLogin()"[disabled]="!adminLoginData.valid">Login</button>
+  </mat-card-actions>
+  </mat-card>
+</div>

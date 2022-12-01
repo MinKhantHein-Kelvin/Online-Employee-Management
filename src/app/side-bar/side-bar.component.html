@@ -1,0 +1,42 @@
+<div class="navbar">
+  <div class="top">
+    <mat-icon>notifications_none</mat-icon>
+  </div>
+  <div class="user">
+    <img src="https://www.nicepng.com/png/full/263-2636271_sign-in-to-start-your-session-admin-png.png" alt="">
+    <h4 class="name">Admin</h4>
+    <p class="mail">admin@gmail.com</p>
+  </div>
+  <div class="menu mt-4">
+    <div class="menu-header">
+      <span>DashBoard</span>
+    </div>
+    <div class="menu-item">
+      <button mat-button class="menu-btn" [routerLink]="['/dashboard']">
+        <mat-icon>dashboard</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-button class="menu-btn" [routerLink]="['/departments']" [matMenuTriggerFor]="afterMenu">
+        <mat-icon>diversity_3</mat-icon>
+        <span>Departments</span>
+      </button>
+      <mat-menu #afterMenu="matMenu">
+        <button mat-menu-item>Admin</button>
+        <button mat-menu-item>HR</button>
+        <button mat-menu-item>IT</button>
+      </mat-menu>
+      <button mat-button class="menu-btn" [routerLink]="['/employees']">
+        <mat-icon> comment</mat-icon>
+        <span>Employees</span>
+      </button>
+      <button mat-button class="menu-btn" [routerLink]="['/pages']">
+        <mat-icon>currency_exchange</mat-icon>
+        <span>Salary</span>
+      </button>
+      <button mat-button class="menu-btn" [routerLink]="['/setting']">
+        <mat-icon>settings</mat-icon>
+        <span>Setting</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+    <app-side-bar></app-side-bar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content">
+      <div class="toolbar">
+        <mat-toolbar style="background: cornflowerblue;">
+          <mat-icon (click)="sidenav.toggle()" style="color: gray; cursor: pointer; font-size: 30px;">menu</mat-icon>
+          <div class="box">
+            <button mat-raised-button color="warn" class="mr-2" (click)="logOut()">Log Out</button>
+          </div>
+        </mat-toolbar>
+      </div>
+      <div class="main">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
